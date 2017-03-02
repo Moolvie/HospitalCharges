@@ -1,0 +1,15 @@
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\bin\Debug\HospitalCharges.exe.config
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\bin\Debug\HospitalCharges.exe
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\bin\Debug\HospitalCharges.pdb
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\bin\Debug\HospitalCharges.xml
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.vbprojResolveAssemblyReference.cache
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.HospitalCharges.resources
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.Resources.resources
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.vbproj.GenerateResource.Cache
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.exe
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.xml
+E:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.pdb
+D:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\bin\Debug\HospitalCharges.exe.config
+D:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.exe
+D:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.xml
+D:\School\A Spring2017\Visual Basic\Projects\Chapter_6\HospitalCharges\HospitalCharges\obj\Debug\HospitalCharges.pdb
