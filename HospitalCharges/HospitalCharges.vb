@@ -29,11 +29,12 @@
         ' Validate input values
         If ValidateInputFields() Then
             ' Calculate stay charges
-            MessageBox.Show("We passed!")
+            Dim stayCharges As Double = CalcStayCharges(daysSpentInHospital)
+
             ' Calculate misc charges
-        Else
+
             ' Calculate total charges
-            MessageBox.Show("We didn't pass!")
+
         End If
     End Sub
     Private Function ValidateInputFields() As Boolean
@@ -81,4 +82,16 @@
 
         Return True
     End Function
+    Function CalcStayCharges(daysOccupied As Integer) As Double
+        Const CHARGE_PER_DAY = 350.0
+        Return daysOccupied * CHARGE_PER_DAY
+
+    End Function
+    Function CalcMiscCharges() As Double
+
+    End Function
+    Function CalcTotalCharges() As Double
+
+    End Function
+
 End Class
