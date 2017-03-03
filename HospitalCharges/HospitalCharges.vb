@@ -29,36 +29,56 @@
         ' Validate input values
         If ValidateInputFields() Then
             ' Calculate stay charges
-
+            MessageBox.Show("We passed!")
             ' Calculate misc charges
-
+        Else
             ' Calculate total charges
+            MessageBox.Show("We didn't pass!")
         End If
     End Sub
     Private Function ValidateInputFields() As Boolean
-        ' Try to convert each of the input fields return False if
-        ' any field is invalid, and display an suitable error message.
-        If Not Integer.TryParse(lengthOfStayLabel.Text, daysSpentInHospital) Then
+        ' Try to convert each of the input fields. return False if
+        ' any field is invalid, and display a suitable error message.
+        If Not Integer.TryParse(LengthOfStayInputBox.Text, daysSpentInHospital) Then
             ErrorMessageLabel.Text = "Length of Stay must be an integer."
+            Return False
+        ElseIf (daysSpentInHospital < 0) Then
+            ErrorMessageLabel.Text = "Length of Stay must be a positive integer."
             Return False
         End If
 
         If Not Double.TryParse(MedicationInputBox.Text, medicationCharges) Then
             ErrorMessageLabel.Text = "Medication charges must be a number."
             Return False
+        ElseIf (medicationCharges < 0) Then
+            ErrorMessageLabel.Text = "Medication charges must be a positive number."
+            Return False
         End If
+
         If Not Double.TryParse(SurgicalChargesInputBox.Text, surgicalCharges) Then
             ErrorMessageLabel.Text = "Surgical charges must be a number."
             Return False
+        ElseIf (surgicalCharges < 0) Then
+            ErrorMessageLabel.Text = "Surgical charges must be a positive number."
+            Return False
         End If
+
         If Not Double.TryParse(LabFeesInputBox.Text, labFees) Then
             ErrorMessageLabel.Text = "Lab fees must be a number."
             Return False
+        ElseIf (labFees < 0) Then
+            ErrorMessageLabel.Text = "Lab fees must be a positive number."
+            Return False
         End If
+
         If Not Double.TryParse(PhysicalRehabInputBox.Text, physicalRehabCharges) Then
             ErrorMessageLabel.Text = "Physical Rehab charges must be a number."
             Return False
+        ElseIf (physicalRehabCharges < 0) Then
+            ErrorMessageLabel.Text = "Physical rehab charges must be a positive number."
+            Return False
         End If
+
         Return True
     End Function
 End Class
