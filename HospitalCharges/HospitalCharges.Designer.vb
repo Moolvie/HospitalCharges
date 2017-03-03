@@ -23,6 +23,7 @@ Partial Class HospitalCharges
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.InputValuesPanel = New System.Windows.Forms.Panel()
+        Me.ErrorMessageLabel = New System.Windows.Forms.Label()
         Me.PhysicalRehabLabel = New System.Windows.Forms.Label()
         Me.LabFeesLabel = New System.Windows.Forms.Label()
         Me.SurgicalChargesLabel = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class HospitalCharges
         Me.CalculateButton = New System.Windows.Forms.Button()
         Me.ClearFormButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.ErrorMessageLabel = New System.Windows.Forms.Label()
         Me.InputValuesPanel.SuspendLayout()
         Me.TotalCostPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -62,6 +62,15 @@ Partial Class HospitalCharges
         Me.InputValuesPanel.Name = "InputValuesPanel"
         Me.InputValuesPanel.Size = New System.Drawing.Size(375, 227)
         Me.InputValuesPanel.TabIndex = 0
+        '
+        'ErrorMessageLabel
+        '
+        Me.ErrorMessageLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ErrorMessageLabel.Location = New System.Drawing.Point(17, 192)
+        Me.ErrorMessageLabel.Name = "ErrorMessageLabel"
+        Me.ErrorMessageLabel.Size = New System.Drawing.Size(339, 23)
+        Me.ErrorMessageLabel.TabIndex = 10
+        Me.ErrorMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PhysicalRehabLabel
         '
@@ -155,6 +164,7 @@ Partial Class HospitalCharges
         'TotalCost
         '
         Me.TotalCost.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TotalCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalCost.Location = New System.Drawing.Point(206, 12)
         Me.TotalCost.Name = "TotalCost"
         Me.TotalCost.Size = New System.Drawing.Size(150, 16)
@@ -200,15 +210,6 @@ Partial Class HospitalCharges
         Me.ExitButton.TabIndex = 4
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
-        '
-        'ErrorMessageLabel
-        '
-        Me.ErrorMessageLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ErrorMessageLabel.Location = New System.Drawing.Point(17, 192)
-        Me.ErrorMessageLabel.Name = "ErrorMessageLabel"
-        Me.ErrorMessageLabel.Size = New System.Drawing.Size(339, 23)
-        Me.ErrorMessageLabel.TabIndex = 10
-        Me.ErrorMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'HospitalCharges
         '

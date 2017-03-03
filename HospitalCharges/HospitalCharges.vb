@@ -28,15 +28,18 @@
         ErrorMessageLabel.Text = String.Empty
         ' Validate input values
         If ValidateInputFields() Then
+
             ' Calculate stay charges
             Dim stayCharges As Double = CalcStayCharges(daysSpentInHospital)
 
             ' Calculate misc charges
+            Dim miscCharges As Double = CalcMiscCharges(medicationCharges, surgicalCharges, labFees, physicalRehabCharges)
 
             ' Calculate total charges
-
+            TotalCost.Text = CalcTotalCharges(stayCharges, miscCharges).ToString("c")
         End If
     End Sub
+
     Private Function ValidateInputFields() As Boolean
         ' Try to convert each of the input fields. return False if
         ' any field is invalid, and display a suitable error message.
@@ -82,16 +85,19 @@
 
         Return True
     End Function
+
     Function CalcStayCharges(daysOccupied As Integer) As Double
         Const CHARGE_PER_DAY = 350.0
-        Return daysOccupied * CHARGE_PER_DAY
+        Return (daysOccupied * CHARGE_PER_DAY)
 
     End Function
-    Function CalcMiscCharges() As Double
 
+    Function CalcMiscCharges(medicalCharges As Double, surgicalCharges As Double, labFees As Double, physicalRehabCharges As Double) As Double
+        Return (medicalCharges + surgicalCharges + labFees + physicalRehabCharges)
     End Function
-    Function CalcTotalCharges() As Double
 
+    Function CalcTotalCharges(room As Double, other As Double) As Double
+        Return (room + other)
     End Function
 
 End Class
